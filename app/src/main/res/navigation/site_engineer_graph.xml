@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/site_engineer_graph.xml"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/home"
+        android:name="com.example.evo.trialapplication.product.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/addProduct"
+        android:name="com.example.evo.trialapplication.product.AddProduct"
+        android:label="add_product"
+        tools:layout="@layout/add_product" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.evo.trialapplication.interview.HomeFragment"
+        android:label="Home Cleaning"
+        tools:layout="@layout/fragment_home2" />
+    <fragment
+        android:id="@+id/cartList"
+        android:name="com.example.evo.trialapplication.interview.CartList"
+        android:label="Your Order"
+        tools:layout="@layout/cart_list" />
+</navigation>

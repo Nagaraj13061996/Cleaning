@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/headerTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Apartment Size"
+        android:textColor="@color/new_black"
+        android:textSize="@dimen/text_size15sp"
+        app:layout_constraintEnd_toStartOf="@id/headerSubTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/headerSubTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Choose 1"
+        android:textSize="@dimen/text_size15sp"
+        app:layout_constraintEnd_toStartOf="@id/required"
+        app:layout_constraintStart_toEndOf="@id/headerTitle"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/required"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="@color/red"
+        android:text="Required"
+        android:visibility="gone"
+        android:textSize="@dimen/text_size15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/headerSubTitle"
+        app:layout_constraintTop_toTopOf="parent" />
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/childRecycle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@id/headerTitle"
+    app:layout_constraintStart_toStartOf="parent"
+    android:layout_marginBottom="@dimen/dimen_10"
+    android:layout_marginTop="@dimen/dimen_10"/>
+    <View
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/childRecycle"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#DFE6E6" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

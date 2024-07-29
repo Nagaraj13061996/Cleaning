@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@id/zoom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/scroll"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/dimen_5dp">
+
+
+
+                        <TextView
+                            android:textColor="@color/new_black"
+                            style="@style/TextDefault12"
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:gravity="center"
+                            android:id="@+id/product"
+                            android:text="Product" />
+                        <TextView
+                            android:textColor="@color/new_black"
+                            style="@style/TextDefault12"
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:inputType="textMultiLine"
+                            android:gravity="center"
+                            android:id="@+id/qty"
+                            android:text="Qty" />
+
+
+                        <TextView
+                            style="@style/TextDefault12"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:textColor="@color/new_black"
+                            android:singleLine="true"
+                            android:gravity="center"
+                            android:text="G Tot" />
+                        <TextView
+                            style="@style/TextDefault12"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:gravity="center"
+                            android:textColor="#1EDC26"
+                            android:text="Tot" />
+                        <!--                        <ImageView-->
+                        <!--                            style="@style/TextDefault12"-->
+                        <!--                            android:layout_width="@dimen/dimen_70"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:singleLine="true"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:visibility="invisible"-->
+                        <!--                            android:textColor="@color/blue"-->
+                        <!--                            android:text="Tot" />-->
+
+
+                    </LinearLayout>
+
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/list_divider" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

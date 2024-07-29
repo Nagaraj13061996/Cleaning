@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Cleaning</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="add_to_order">Add to order₹ </string>
+    <string name="attention">Attention </string>
+    <string name="repeat_last">Repeat Last </string>
+    <string name="remove_correct_item">This item has multiple customizations added. Remove the correct item from the cart. </string>
+    <string name="cart_clear">Cart Cleared Successfully.\n Success </string>
+    <string name="update_items"> Updated items in cart successfully.\nsuccess </string>
+    <string name="with_sofa_carpet_wet_shampooing"><![CDATA[With Sofa & Carpet Wet Shampooing]]></string>
+    <string name="with_sofa_carpet_dry_vacuuming"><![CDATA[With Sofa & Carpet Dry Vacuuming]]></string>
+    <string name="image">image</string>
+
+</resources>
